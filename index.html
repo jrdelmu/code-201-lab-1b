@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    h1 {color: olive; background-color: black;}
+    ul {background-color: blueviolet;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Questionnaire!</h1>
+  </header>
+  <main>
+    <h1>Class 1 Lab</h1>
+    <ul>
+      <li style="color: rgb(255, 192, 192); background-color: grey;">Hello, what is your name?</li>
+      <li style="color: rgb(254, 255, 192); background-color: grey;">What is your favorite genre of music?</li>
+      <li style="color: rgb(194, 255, 192); background-color: grey;">What is your favorite kind of food?</li>
+      <li style="color: rgb(192, 248, 255); background-color: grey;">What is a place you want to travel to?</li>
+    </ul>
+
+  </main>
+  <footer></footer>
+  <script>
+    let username = prompt('Hello, what is your name?');
+    let music = prompt(`Hello ${username}, what is your favorite genre of music?`);
+    let food = prompt(`Hello ${username} who likes to listen to ${music}, what is your favorite kind of food?`);
+    let travel = prompt(`Hello ${username} who likes to listen to ${music} and eat ${food}, what is a place you would like to travel to one day?`)
+    function japan(){
+        if(travel.toLowerCase() === 'japan'){
+        alert(`Hello to my new friend ${username} who likes to listen to ${music} and eat ${food}. Konnichiwa!`);
+      } else {
+        alert(`Hello to my new friend ${username} who likes to listen to ${music} and eat ${food}. ${travel} is a cool place but Japan is cooler!`)
+      }
+    };
+    japan()
+  </script>
+</body>
+</html>
